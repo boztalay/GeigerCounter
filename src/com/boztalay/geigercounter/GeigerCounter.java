@@ -5,13 +5,22 @@ import jssc.SerialPortEvent;
 import jssc.SerialPortEventListener;
 import jssc.SerialPortException;
 
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class GeigerCounter implements SerialPortEventListener {
+    private static final String SERIAL_PORT_NAME = "/dev/tty.usbserial-AM01VHAL";
+    private static final String CLICK_SOUND_PATH = "file:res/switch-5.wav";
+
     private static final float CPM_INTERVAL_IN_MINUTES = 0.5f;
 
     private static final byte GEIGER_COUNTER_SPEAK_FOR_0 = 48;
     private static final byte GEIGER_COUNTER_SPEAK_FOR_1 = 49;
 
     private SerialPort serialPort;
+    private AudioClip clickSound;
 
     private int currentCounts;
     private long lastCountCollectionTime;
@@ -21,8 +30,16 @@ public class GeigerCounter implements SerialPortEventListener {
         geigerCounter.startListeningAndCounting();
     }
 
+    public GeigerCounter() {
+        try {
+            clickSound = Applet.newAudioClip(new URL(CLICK_SOUND_PATH));
+        } catch (MalformedURLException e) {
+            throw new RuntimeException("Bad click sound path!");
+        }
+    }
+
     public void startListeningAndCounting() {
-        serialPort = new SerialPort("/dev/tty.usbserial-AM01VHAL");
+        serialPort = new SerialPort(SERIAL_PORT_NAME);
 
         lastCountCollectionTime = System.currentTimeMillis();
 
@@ -31,8 +48,8 @@ public class GeigerCounter implements SerialPortEventListener {
             serialPort.setParams(9600, 8, 1, 0);
             serialPort.setEventsMask(SerialPort.MASK_RXCHAR);
             serialPort.addEventListener(this);
-        } catch (SerialPortException exception) {
-            System.out.println(exception);
+        } catch (SerialPortException e) {
+            System.out.println(e);
         }
     }
 
@@ -52,10 +69,11 @@ public class GeigerCounter implements SerialPortEventListener {
             for(byte dataValue : geigerCounterData) {
                 if(isValueValidGeigerCounterData(dataValue)) {
                     System.out.println("ZAP!");
+                    clickSound.play();
                 }
             }
-        } catch (SerialPortException ex) {
-            System.out.println(ex);
+        } catch (SerialPortException e) {
+            System.out.println(e);
         }
     }
 
