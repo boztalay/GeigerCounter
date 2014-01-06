@@ -9,21 +9,22 @@ import java.applet.Applet;
 import java.applet.AudioClip;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class GeigerCounter implements SerialPortEventListener {
     private static final String SERIAL_PORT_NAME = "/dev/tty.usbserial-AM01VHAL";
     private static final String CLICK_SOUND_PATH = "file:res/switch-5.wav";
 
-    private static final float CPM_INTERVAL_IN_MINUTES = 0.5f;
-
     private static final byte GEIGER_COUNTER_SPEAK_FOR_0 = 48;
     private static final byte GEIGER_COUNTER_SPEAK_FOR_1 = 49;
+
+    private static final float COUNT_PERIOD_IN_MINUTES = 0.5f;
 
     private SerialPort serialPort;
     private AudioClip clickSound;
 
     private int currentCounts;
-    private long lastCountCollectionTime;
 
     public static void main(String[] args) {
         GeigerCounter geigerCounter = new GeigerCounter();
@@ -41,8 +42,6 @@ public class GeigerCounter implements SerialPortEventListener {
     public void startListeningAndCounting() {
         serialPort = new SerialPort(SERIAL_PORT_NAME);
 
-        lastCountCollectionTime = System.currentTimeMillis();
-
         try {
             serialPort.openPort();
             serialPort.setParams(9600, 8, 1, 0);
@@ -51,8 +50,21 @@ public class GeigerCounter implements SerialPortEventListener {
         } catch (SerialPortException e) {
             System.out.println(e);
         }
+
+        Timer timer = new Timer();
+        long timerPeriodInMilliseconds = (long)(60000 * COUNT_PERIOD_IN_MINUTES);
+        timer.scheduleAtFixedRate(new CalculateCPM(), timerPeriodInMilliseconds, timerPeriodInMilliseconds);
     }
 
+    class CalculateCPM extends TimerTask {
+        public void run() {
+            float CPM = currentCounts / COUNT_PERIOD_IN_MINUTES;
+            System.out.println("CPM: " + CPM);
+            currentCounts = 0;
+        }
+    }
+
+    //Called whenever something comes over the serial line
     public void serialEvent(SerialPortEvent event) {
         if (doesEventHaveDataReady(event)) {
             processDataFromEvent(event);
@@ -68,8 +80,8 @@ public class GeigerCounter implements SerialPortEventListener {
             byte[] geigerCounterData = serialPort.readBytes(event.getEventValue());
             for(byte dataValue : geigerCounterData) {
                 if(isValueValidGeigerCounterData(dataValue)) {
-                    System.out.println("ZAP!");
                     clickSound.play();
+                    currentCounts++;
                 }
             }
         } catch (SerialPortException e) {
