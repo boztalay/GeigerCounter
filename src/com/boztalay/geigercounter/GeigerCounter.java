@@ -26,12 +26,16 @@ public class GeigerCounter implements SerialPortEventListener {
 
     private int currentCounts;
 
+    private BackendHandler backendHandler;
+
     public static void main(String[] args) {
         GeigerCounter geigerCounter = new GeigerCounter();
         geigerCounter.startListeningAndCounting();
     }
 
     public GeigerCounter() {
+        backendHandler = new BackendHandler();
+
         try {
             clickSound = Applet.newAudioClip(new URL(CLICK_SOUND_PATH));
         } catch (MalformedURLException e) {
@@ -53,10 +57,10 @@ public class GeigerCounter implements SerialPortEventListener {
 
         Timer timer = new Timer();
         long timerPeriodInMilliseconds = (long)(60000 * COUNT_PERIOD_IN_MINUTES);
-        timer.scheduleAtFixedRate(new CalculateCPM(), timerPeriodInMilliseconds, timerPeriodInMilliseconds);
+        timer.scheduleAtFixedRate(new CalculateCPMTask(), timerPeriodInMilliseconds, timerPeriodInMilliseconds);
     }
 
-    class CalculateCPM extends TimerTask {
+    class CalculateCPMTask extends TimerTask {
         public void run() {
             float CPM = currentCounts / COUNT_PERIOD_IN_MINUTES;
             System.out.println("CPM: " + CPM);
@@ -82,6 +86,7 @@ public class GeigerCounter implements SerialPortEventListener {
                 if(isValueValidGeigerCounterData(dataValue)) {
                     clickSound.play();
                     currentCounts++;
+                    backendHandler.recordReading();
                 }
             }
         } catch (SerialPortException e) {
