@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc47e3c0-a8ae-4fcb-b006-1899155244bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/firebase-client-jvm-LATEST.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/BackendHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_client_jvm_LATEST.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeigerCounter.iml" afterPath="$PROJECT_DIR$/GeigerCounter.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/boztalay/geigercounter/BackendHandler.java" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GeigerCounter.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1388906921557" ignored="false" />
-    <file path="/GeigerCounter.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389043564746" ignored="false" />
-    <file path="/BackendHandler.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389035902394" ignored="false" />
+    <file path="/GeigerCounter.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389154737959" ignored="false" />
+    <file path="/BackendHandler.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389116927897" ignored="false" />
+    <file path="/ZapListener.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389117146111" ignored="false" />
+    <file path="/ZapReader.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389154637568" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,10 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GeigerCounter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GeigerCounter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="74" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.0">
+            <state line="40" column="32" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.85592014">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,10 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BackendHandler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/BackendHandler.java">
+      <file leaf-file-name="ZapRecorder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="410" selection-end="410" vertical-scroll-proportion="0.29957205">
+            <state line="31" column="13" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZapReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="46" selection-start="1672" selection-end="1672" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,8 +123,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" />
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/BackendHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java" />
+        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapListener.java" />
+        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" />
+        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" />
       </list>
     </option>
   </component>
@@ -401,7 +413,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -417,7 +429,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21052632" sideWeight="0.7657563" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23424369" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23424369" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -499,18 +511,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="74" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.0">
+        <state line="50" column="46" selection-start="1672" selection-end="1672" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/BackendHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="410" selection-end="410" vertical-scroll-proportion="0.29957205">
+        <state line="31" column="13" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="32" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.85592014">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
