@@ -7,7 +7,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class ZapRecorder {
-    private static final int CPM_CALCULATION_PERIOD_IN_MINS = 15;
+    private static final int CPM_CALCULATION_PERIOD_IN_MINS = 5;
 
     private Firebase zapsFirebaseRef;
     private Firebase cpmCalculationsFirebaseRef;

@@ -35,7 +35,7 @@ public class GeigerCounter implements ZapReader.ZapListener {
 
     @Override
     public void zapOccurred() {
-        System.out.println("Zap!");
+//        System.out.println("Zap!");
         clickSound.play();
 
         zapRecorder.recordZap();
