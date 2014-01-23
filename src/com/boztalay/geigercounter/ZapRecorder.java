@@ -8,7 +8,6 @@ import java.util.TimerTask;
 
 public class ZapRecorder {
     private static final int CPM_CALCULATION_PERIOD_IN_MINS = 15;
-    private static final int AMOUNT_OF_TIME_TO_CALCULATE_CPM_OVER_IN_MINS = 5;
 
     private Firebase zapsFirebaseRef;
     private Firebase cpmCalculationsFirebaseRef;
@@ -39,7 +38,7 @@ public class ZapRecorder {
             public Transaction.Result doTransaction(MutableData currentData) {
                 if (currentData.getChildrenCount() > 0) {
                     long dateMax = System.currentTimeMillis();
-                    long dateMin = dateMax - minutesToMillis(AMOUNT_OF_TIME_TO_CALCULATE_CPM_OVER_IN_MINS);
+                    long dateMin = dateMax - minutesToMillis(CPM_CALCULATION_PERIOD_IN_MINS);
 
                     int numZapsOverTimeToCalculateCPM = 0;
 
@@ -50,10 +49,10 @@ public class ZapRecorder {
                         }
                     }
 
-                    float cpm = ((float) numZapsOverTimeToCalculateCPM / (float)AMOUNT_OF_TIME_TO_CALCULATE_CPM_OVER_IN_MINS);
+                    float cpm = ((float) numZapsOverTimeToCalculateCPM / (float)CPM_CALCULATION_PERIOD_IN_MINS);
                     cpmCalculationsFirebaseRef.push().setValue(new CPMCalculation(System.currentTimeMillis(), cpm));
 
-                    System.out.println("Number of zaps over last " + AMOUNT_OF_TIME_TO_CALCULATE_CPM_OVER_IN_MINS + " minutes: " + numZapsOverTimeToCalculateCPM);
+                    System.out.println("Number of zaps over last " + CPM_CALCULATION_PERIOD_IN_MINS + " minutes: " + numZapsOverTimeToCalculateCPM);
                     System.out.println("CPM: " + cpm);
                 }
 
@@ -68,7 +67,7 @@ public class ZapRecorder {
     }
 
     private long minutesToMillis(int minutes) {
-        return (minutes * 60 * 10000);
+        return (minutes * 60 * 1000);
     }
 
     private class Zap {
