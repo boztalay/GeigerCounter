@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc47e3c0-a8ae-4fcb-b006-1899155244bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="fc47e3c0-a8ae-4fcb-b006-1899155244bc" name="Default" comment="" />
     <ignored path="GeigerCounter.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1390433446787" ignored="false" />

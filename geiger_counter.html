@@ -14,7 +14,7 @@
 	google.setOnLoadCallback(drawCPMGraph);
 	function drawCPMGraph() {
 		var options = {
-			title: 'Counts per minute, measured over 5 minutes every 5 minutes',
+			title: 'Counts per minute, measured every 5 minutes for the past 24 hours',
 			legend: { position: 'none' },
 			hAxis: { textPosition: 'none' }
 		};
@@ -27,6 +27,7 @@
 		cpmGraphData.addColumn('number', 'CPM');
 
 		var oneDayAgoMillis = Date.now() - (24 * 60 * 60 * 1000);
+		var sixMinutesAgoMillis = Date.now() - (6 * 60 * 1000);
 
 		var cpmFirebaseRef = new Firebase('https://geigercounter.firebaseio.com/cmpCalculations');
 		cpmFirebaseRef.on('child_added', function(snapshot) {
@@ -34,8 +35,14 @@
 					var date = (new Date(snapshot.val().date)).toLocaleTimeString();
 					cpmGraphData.addRow([date, snapshot.val().cpm]);
 
-					chart.draw(cpmGraphData, options);
-					latestCpm.innerHTML = String(snapshot.val().cpm);
+					if(cpmGraphData.getNumberOfRows() > 288) { //288 5-minutes in a day
+						cpmGraphData.removeRow(0);
+					}
+
+					if(snapshot.val().date > sixMinutesAgoMillis) {
+						chart.draw(cpmGraphData, options);
+						latestCpm.innerHTML = String(snapshot.val().cpm);
+					}
 				}
 		});
 	}
@@ -49,7 +56,7 @@
 			Latest CPM
 		</div>
 		<div id="latest_cpm" style="float: right;">
-			2400
+			...
 		</div>
 	</div>
 
