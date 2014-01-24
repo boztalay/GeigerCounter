@@ -6,4 +6,4 @@ A simple program to read the serial output of a Sparkfun Geiger counter and calc
 Live Feed
 ---------
 
-I have a [live feed](https://www.benoztalay.com/geiger-counter) of data from the Geiger counter on my website, including live zaps!
+I have a [live feed](http://www.benoztalay.com/geiger-counter) of data from the Geiger counter on my website, including live zaps!
