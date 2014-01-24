@@ -54,6 +54,8 @@ public class ZapRecorder {
 
                     System.out.println("Number of zaps over last " + CPM_CALCULATION_PERIOD_IN_MINS + " minutes: " + numZapsOverTimeToCalculateCPM);
                     System.out.println("CPM: " + cpm);
+
+                    zapsFirebaseRef.removeValue();
                 }
 
                 return Transaction.success(currentData);
