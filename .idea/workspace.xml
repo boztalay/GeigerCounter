@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc47e3c0-a8ae-4fcb-b006-1899155244bc" name="Default" comment="" />
+    <list default="true" id="fc47e3c0-a8ae-4fcb-b006-1899155244bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="GeigerCounter.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1390433446787" ignored="false" />
+    <file path="/Dummy.txt" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1390792290994" ignored="false" />
     <file path="/GeigerCounter.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1390536284305" ignored="false" />
     <file path="/BackendHandler.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389116927897" ignored="false" />
     <file path="/ZapListener.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389117146111" ignored="false" />
@@ -74,29 +78,27 @@
       <file leaf-file-name="GeigerCounter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+            <state line="13" column="30" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZapReader.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ZapReader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="63" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+            <state line="10" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.14935988">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZapRecorder.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ZapRecorder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="103" selection-start="568" selection-end="583" vertical-scroll-proportion="-1.1910112">
+            <state line="10" column="62" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#758#885#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,15 +124,163 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/BackendHandler.java" />
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapListener.java" />
-        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" />
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" />
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java" />
+        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="1744" />
+    <option name="y" value="-4" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Assignment issues</id>
+          </State>
+          <State>
+            <id>Class metrics</id>
+          </State>
+          <State>
+            <id>Class structure</id>
+          </State>
+          <State>
+            <id>Code maturity issues</id>
+          </State>
+          <State>
+            <id>Code style issues</id>
+          </State>
+          <State>
+            <id>Compiler issues</id>
+          </State>
+          <State>
+            <id>Declaration redundancy</id>
+          </State>
+          <State>
+            <id>Encapsulation issues</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
+            <id>Finalization issues</id>
+          </State>
+          <State>
+            <id>GPath inspectionsGroovy</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Imports</id>
+          </State>
+          <State>
+            <id>Inheritance issues</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>J2ME issues</id>
+          </State>
+          <State>
+            <id>JUnit issues</id>
+          </State>
+          <State>
+            <id>Java language level issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>JavaBeans issues</id>
+          </State>
+          <State>
+            <id>JavaFX</id>
+          </State>
+          <State>
+            <id>Javadoc issues</id>
+          </State>
+          <State>
+            <id>Language Injection</id>
+          </State>
+          <State>
+            <id>Logging issues</id>
+          </State>
+          <State>
+            <id>Memory issues</id>
+          </State>
+          <State>
+            <id>Method metrics</id>
+          </State>
+          <State>
+            <id>Naming ConventionsGroovy</id>
+          </State>
+          <State>
+            <id>Naming conventions</id>
+          </State>
+          <State>
+            <id>Numeric issues</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Resource management issues</id>
+          </State>
+          <State>
+            <id>Security issues</id>
+          </State>
+          <State>
+            <id>Serialization issues</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Visibility issues</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -158,7 +308,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,47 +344,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeigerCounter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeigerCounter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeigerCounter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeigerCounter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/Parse-1.3.9-javadoc" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -409,8 +531,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="1744" y="-4" width="1857" height="1085" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -420,13 +542,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32878152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21052632" sideWeight="0.7773109" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22268908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2100608" sideWeight="0.77801496" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22198506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -499,6 +621,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="103" selection-start="568" selection-end="583" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -511,31 +642,23 @@
         <state line="29" column="77" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#758#885#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/firebase-client-jvm-LATEST.jar!/com/firebase/client/utilities/DefaultRunLoop.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/firebase-client-jvm-LATEST.jar!/com/firebase/client/realtime/Connection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="17" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="52" column="17" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/firebase-client-jvm-LATEST.jar!/com/firebase/client/realtime/WebsocketConnection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="42" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java">
@@ -550,8 +673,6 @@
         <state line="31" column="13" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#758#885#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -572,47 +693,39 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/firebase-client-jvm-LATEST.jar!/com/firebase/client/realtime/Connection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="17" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="52" column="17" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/firebase-client-jvm-LATEST.jar!/com/firebase/client/realtime/WebsocketConnection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="42" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/firebase-client-jvm-LATEST.jar!/com/firebase/client/utilities/DefaultRunLoop.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="63" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+        <state line="13" column="30" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="103" selection-start="568" selection-end="583" vertical-scroll-proportion="-1.1910112">
+        <state line="10" column="62" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#758#885#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.14935988">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +769,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -673,7 +786,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

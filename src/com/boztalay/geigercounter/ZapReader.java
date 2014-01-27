@@ -6,7 +6,7 @@ import jssc.SerialPortEventListener;
 import jssc.SerialPortException;
 
 public class ZapReader implements SerialPortEventListener {
-    private static final String SERIAL_PORT_NAME = "/dev/tty.usbserial-AM01VHAL";
+    private static final String SERIAL_PORT_NAME = "/dev/ttyUSB0";
 
     private static final byte GEIGER_COUNTER_SPEAK_FOR_0 = 48;
     private static final byte GEIGER_COUNTER_SPEAK_FOR_1 = 49;

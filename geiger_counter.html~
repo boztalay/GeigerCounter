@@ -7,7 +7,7 @@
 		liveZapIndicator.style.background = "#00ee00";
 		setTimeout(function() {
 			liveZapIndicator.style.background = "#444444";
-		}, 20);
+		}, 10);
 	});
 
 	google.load("visualization", "1", {packages:["corechart"]});
