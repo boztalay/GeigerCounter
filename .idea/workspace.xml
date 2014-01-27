@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GeigerCounter:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fc47e3c0-a8ae-4fcb-b006-1899155244bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" afterPath="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GeigerCounter.iws" />
@@ -13,7 +16,7 @@
     <file path="/BackendHandler.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389116927897" ignored="false" />
     <file path="/ZapListener.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389117146111" ignored="false" />
     <file path="/ZapReader.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1390536129079" ignored="false" />
-    <file path="/ZapRecorder.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1390537516945" ignored="false" />
+    <file path="/ZapRecorder.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1390794842602" ignored="false" />
     <file path="/fragment.java" changelist="fc47e3c0-a8ae-4fcb-b006-1899155244bc" time="1389921928295" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,21 +87,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZapReader.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ZapReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.14935988">
+            <state line="10" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZapRecorder.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ZapRecorder.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="62" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.0">
+            <state line="49" column="62" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.44146687">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#758#885#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/BackendHandler.java" />
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapListener.java" />
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/GeigerCounter.java" />
-        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java" />
         <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java" />
+        <option value="$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java" />
       </list>
     </option>
   </component>
@@ -339,6 +344,20 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeigerCounter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeigerCounter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="geigercounter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -352,7 +371,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
@@ -542,13 +561,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21558164" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2100608" sideWeight="0.77801496" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22198506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2100608" sideWeight="0.78441834" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22198506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -626,6 +645,8 @@
         <state line="18" column="103" selection-start="568" selection-end="583" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#758#885#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,6 +663,8 @@
         <state line="29" column="77" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#758#885#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,6 +696,8 @@
         <state line="31" column="13" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#758#885#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,19 +738,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
+    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="62" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="10" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapReader.java">
+    <entry file="file://$PROJECT_DIR$/src/com/boztalay/geigercounter/ZapRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.14935988">
-          <folding />
+        <state line="49" column="62" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.44146687">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#758#885#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -735,10 +762,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>GeigerCounter:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
